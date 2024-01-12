@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  color: #d9d9d9;
 }
 body{
   background: #242529;
@@ -20,9 +21,9 @@ nav {
 }
 .nav-list a{
     text-decoration: none;
-    color: #fff;
+    color: #d9d9d9;
 }
-li{
+.nav-list li{
     list-style: none;
     padding: 1vw 2vw;
     font-size: 1.5vw;
@@ -33,12 +34,12 @@ li{
 .contact-me {
     width: max-content;
     background-color: #fef27a;
-    border-radius: 5px;
-    padding: 10px 15px;
+    border-radius: 0.5vw;
+    padding: 0.5vw 2vw;
     color: #1d1e20 !important;
-    font-size: 25px;
+    font-size: 1.5vw;
     font-weight: 900;
-    padding-left: 20px;
+    padding-left: 2vw;
     /* padding-right: 0; */
     /* right: 0;
     position: sticky; */
@@ -52,22 +53,23 @@ li{
 }
 .content{
   position: absolute;
-  top: 120px;
+  top: 12vw;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 5vw;
 }
 .card{
   background-color: #35353d;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-radius: 25px;
+  border-radius: 2.5vw;
   width: 80vw;
-  height:35vw
+  height:35vw;
+  margin-bottom: 8vw;
 }
 .card-left{
   display: flex;
@@ -90,7 +92,7 @@ li{
 }
 .yellow-profile-pic{
   border: 4px solid #fef27a;
-  border-radius: 1000px ;
+  border-radius: 100vw ;
   width: 75%;
   height: auto;
 }
@@ -100,10 +102,10 @@ li{
   flex-direction: column;
 }
 .card-left-bottom{
-  padding: 30px;
+  padding: 3vw;
 }
 .header-card{
-  color: #fff;
+  color: #d9d9d9;
   font-size: 4vw;
   font-weight: bolder;
 }
@@ -115,17 +117,17 @@ li{
   font-size: 2vw;
 }
 .card-btn{
-  padding: 1vw 5px;
+  padding: 1vw 0.5vw;
   width: 12vw;
-  border-radius: 10px;
-  font-size: 2vw;
+  border-radius: 1vw;
+  font-size: 1.5vw;
   font-weight: bold;
 }
 .see-my-works{
   border: 1px solid #fef27a;
   color: #fef27a;
   background-color: #35353d;
-  margin-right: 10px;
+  margin-right: 1vw;
 }
 .hire-me{
   margin-left: 1vw;
@@ -133,32 +135,111 @@ li{
   border: 1px solid #fef27a;
   color:#35353d;
 }
-.about-me{
-  padding-top: 15vw;
-  border-radius: 25px;
+.section{
+  padding-top: 4vw;
+  border-radius: 2.5vw;
   width: 80vw;
-  height:35vw
+  height:auto;
 }
 .section-heading{
   border-bottom: 3px solid #fef27a;
+  margin-bottom: 5%;
   width: 20vw;
 }
 .heading{
   font-size: 3vw;
   font-weight: bold;
-  color: #fff;
+  color: #d9d9d9;
   padding: 1.5vw 0;
 }
 p,h1,h2,h3{
-  color: #fff;
+  color: #d9d9d9;
 }
 .about{
-  padding: 5% 5% 3% 0;
-  font-size: 20px;
+  padding: 0 5% 3% 0;
+  font-size: 2vw;
 }
 .education{
   padding-bottom: 2vw;
 }
 .edu{
   padding-bottom: 1vw;
+}
+.service-content{
+  display: flex;
+  justify-content: space-around;
+}
+.service-div{
+  border-radius: 2.5vw;
+  border:3px solid #fef27a;
+  width: 23vw;
+  height: 23vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topic{
+  font-size: 1.7vw;
+  font-weight: bold;
+  color: #d9d9d9;
+  padding: 1.5vw 0;
+  border-bottom: 2px solid #fef27a;
+  margin-bottom: 2vw;
+  color: #fef27a;
+}
+.points-div li{
+  color: #d9d9d9;
+  padding: 0.3vw 0;
+  font-size: 1.4vw;
+}
+.section-contact-me{
+  color: #d9d9d9;
+  margin-top: 5vw;
+  padding: 1.5vw 0;
+  padding-top: 4vw;
+  border-radius: 2.5vw;
+  width: 80vw;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-me-heading-div{
+  font-size: 3vw;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3vw;
+}
+.contact-me-form-div{
+  background-color: #35353d;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 2.5vw;
+  width: 80vw;
+  height:35vw;
+  margin-bottom: 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-me-form-div div{
+  border: red 2px solid;
+}
+.contact-me-form label{
+  font-size: 2vw;
+}
+.contact-me-form input{
+  width: 50vw;
+  padding: 1vw;
+  background-color: #d9d9d9;
+  margin-top: 0.4vw;
+  margin-bottom: 1vw;
+  border-radius: 0.5vw;
+}
+.submit-contact-me{
+  
 }

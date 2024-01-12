@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
+
+
 </head>
 <body>
 <nav>
@@ -13,19 +17,19 @@
     </div>
     <ul class="nav-list">
         <li>
-            <a href="" class="home">Home</a>
+            <a href="" class="home-Btn">Home</a>
         </li>
         <li>
-            <a href="" class="about">About</a>
+            <a href="" class="about-Btn">About</a>
         </li>
         <li>
-            <a href="" class="service">Service</a>
+            <a href="" class="service-Btn">Service</a>
         </li>
         <li>
-            <a href="" class="project">Project</a>
+            <a href="" class="project-Btn">Project</a>
         </li>
         <li>
-            <a href="" class="blog">Blog</a>
+            <a href="" class="blog-Btn">Blog</a>
         </li>
         <li>
             <button class="contact-me">Contact Me</button>
@@ -49,7 +53,7 @@
             <!-- <img src="resources/resources/WhatsApp Image 2024-01-11 at 18.56.07_cc1e0d0f-modified.png" class="yellow-profile-pic" alt=""> -->
         </div>
     </div>
-    <div class="about-me">
+    <div class="section about-me">
         <div class="section-heading">
             <p class="heading">About Me</p>
         </div>
@@ -61,6 +65,81 @@
         <h2 class="edu">Panimalar Engineering College, Ponammallee</h2>
         <h3 class="edu">B.Tech in Information Technology</h3>
         <p class="edu">Oct 2022 - Jun 2026</p>
+    </div>
+    <div class="section services">
+        <div class="section-heading">
+            <p class="heading">Services</p>
+        </div>
+        <div class="service-content">
+            <div class="service-div frontend-service">
+                <div class="topic">
+                    <i class="fa fa-layer-group"></i> Full Stack development
+                </div>
+                <div class="points-div">
+                    <ul class="points">
+                        <li>Responsive design</li>
+                        <li>Backend Development</li>
+                        <li>Frontend Development</li>
+                        <li>API Integration</li>
+                        <li>Testing</li>
+                        <li>Exception Handling</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-div backend-service">
+                <div class="topic">
+                    <i class="fa fa-code-branch"></i> Logical Programming
+                </div>
+                <div class="points-div">
+                    <ul class="points">
+                        <li>Algorithm Design</li>
+                        <li>Data Structures</li>
+                        <li>Complex Problem Solving</li>
+                        <li>Logical Reasoning</li>
+                        <li>Critical Thinking</li>
+                        <li>Code Optimization</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-div database-management">
+                <div class="topic">
+                    <i class="fa fa-database"></i> Database Management
+                </div>
+                <div class="points-div">
+                    <ul class="points">
+                        <li>Database Design</li>
+                        <li>Normalization</li>
+                        <li>Data Modeling</li>
+                        <li>Database Administration</li>
+                        <li>Data Migration</li>
+                        <li>Security</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-contact-me">
+        <div class="contact-me-heading-div">
+            <p class="contact-me-heading">Have an awesome project idea?<p>
+            <p> Lets's discuss</p>
+        </div>
+        <div class="section contact-me-form-div">
+            <form class="contact-me-form">
+                <div class="name">
+                    <label for="name">Your Name</label><br>
+                    <input type="text" id="name" class="contact-me-name"/>
+                </div>
+                <div class="email">
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" class="contact-me-email"/>
+                </div>
+                <div class="description">
+                    <label for="description">Describe your idea</label><br>
+                    <input type="textarea" id="description" class="contact-me-description"/>
+                </div>
+                <button type="submit" class="submit-contact-me">Send</button>
+            </form>
+        </div>
     </div>
 </div>
 </body>
