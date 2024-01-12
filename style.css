@@ -3,6 +3,9 @@
   padding: 0;
   color: #d9d9d9;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   background: #242529;
 }
@@ -45,7 +48,7 @@ nav {
     position: sticky; */
 }
 .logo {
-  margin: 2vw 4% 2vw 8%;
+  margin: 2vw 4% 1vw 8%;
 }
 .logo-name {
   font-size: 3vw;
@@ -53,7 +56,7 @@ nav {
 }
 .content{
   position: absolute;
-  top: 12vw;
+  top: 6vw;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -69,7 +72,7 @@ nav {
   border-radius: 2.5vw;
   width: 80vw;
   height:35vw;
-  margin-bottom: 8vw;
+  margin-bottom: 3vw;
 }
 .card-left{
   display: flex;
@@ -160,14 +163,51 @@ p,h1,h2,h3{
   font-size: 2vw;
 }
 .education{
-  padding-bottom: 2vw;
+  font-size: 2.6vw;
+  font-weight: 500;
+}
+.edu1{
+  padding-top: 2vw;
+  padding-bottom: 1vw;
+  font-size: 2vw;
+  font-weight: 500;
+}
+.edu2{
+  padding-bottom: 1vw;
+  font-size: 1.75vw;
+  font-weight: 500;
 }
 .edu{
-  padding-bottom: 1vw;
+  padding-bottom: 2.5vw;
+  font-size: 1.5vw;
 }
-.service-content{
+.my-skills{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  width: 48vw;
+}
+.skill{
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  font-size: 1.2vw;
+  margin-top: 2vw;
+  height: auto;
+  background-color:#1d1e20;
+  color:#fef27a ;
+  border: 1px solid #fef27a;
+  border-radius: 0.5vw;
+  padding: 1vw 1.5vw;
+  font-weight: bold;
+}
+.skill i{
+  padding-right: 0.5vw;
+}
+.service-content,.project-content{
+  display: flex;
+  justify-content: space-around;
+
 }
 .service-div{
   border-radius: 2.5vw;
@@ -194,9 +234,9 @@ p,h1,h2,h3{
 }
 .section-contact-me{
   color: #d9d9d9;
-  margin-top: 5vw;
+  margin-top: 1vw;
   padding: 1.5vw 0;
-  padding-top: 4vw;
+  padding-top: 6vw;
   border-radius: 2.5vw;
   width: 80vw;
   height:auto;
@@ -210,36 +250,45 @@ p,h1,h2,h3{
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 3vw;
+  margin-bottom: 1.5vw;
 }
-.contact-me-form-div{
+.contact-me-form{
   background-color: #35353d;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   border-radius: 2.5vw;
   width: 80vw;
-  height:35vw;
+  height:40vw;
+  border: #35353d;
   margin-bottom: 8vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
+.contact-me-description{
+  height: 5vw;
+}
 .contact-me-form-div div{
-  border: red 2px solid;
+  padding-bottom: 2vw;
 }
 .contact-me-form label{
   font-size: 2vw;
 }
 .contact-me-form input{
-  width: 50vw;
-  padding: 1vw;
+  width: 40vw;
+  padding: 0.7vw;
   background-color: #d9d9d9;
   margin-top: 0.4vw;
+  color: #1d1e20;
+  font-size: 1.2vw;
+  font-weight: 1.5vw;
   margin-bottom: 1vw;
   border-radius: 0.5vw;
 }
 .submit-contact-me{
-  
+  padding: 0.5vw 2vw;
+  background-color: #fef27a;
+  font-size: 2vw;
+  font-weight: 700;
+  color: #242529;
+  border-radius: 2vw; 
 }

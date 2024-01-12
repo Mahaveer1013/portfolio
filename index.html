@@ -17,27 +17,27 @@
     </div>
     <ul class="nav-list">
         <li>
-            <a href="" class="home-Btn">Home</a>
+            <a href="#card" class="home-Btn">Home</a>
         </li>
         <li>
-            <a href="" class="about-Btn">About</a>
+            <a href="#about-me" class="about-Btn">About</a>
         </li>
         <li>
-            <a href="" class="service-Btn">Service</a>
+            <a href="#services" class="service-Btn">Service</a>
         </li>
         <li>
-            <a href="" class="project-Btn">Project</a>
+            <a href="#projects" class="project-Btn">Project</a>
         </li>
         <li>
             <a href="" class="blog-Btn">Blog</a>
         </li>
         <li>
-            <button class="contact-me">Contact Me</button>
+            <a href="#contact-me" class="contact-me">Contact Me</a>
         </li>
     </ul>
 </nav>
 <div class="content">
-    <div class="card">
+    <div class="card" id="card">
         <div class="card-left">
             <div class="card-left-top">
                 <p class="header-card name">I'm Mahaveer</p>
@@ -53,7 +53,7 @@
             <!-- <img src="resources/resources/WhatsApp Image 2024-01-11 at 18.56.07_cc1e0d0f-modified.png" class="yellow-profile-pic" alt=""> -->
         </div>
     </div>
-    <div class="section about-me">
+    <div class="section about-me" id="about-me">
         <div class="section-heading">
             <p class="heading">About Me</p>
         </div>
@@ -61,12 +61,25 @@
             I'm Mahaveer, your Full stack developer Wizard!! Creating Responsive and well designed websites and web app with 
             delightful digital experience. Let's make our website or app stand out and share.
         </p>
-        <h1 class="education">Education</h1>
-        <h2 class="edu">Panimalar Engineering College, Ponammallee</h2>
-        <h3 class="edu">B.Tech in Information Technology</h3>
+        <p class="education">Education</p>
+        <p class="edu1">Panimalar Engineering College, Poonamallee</p>
+        <p class="edu2">B.Tech in Information Technology</p>
         <p class="edu">Oct 2022 - Jun 2026</p>
+        <p class="education">My Skills</p>
+        <div class="my-skills">
+            <div class="skill html"><i class="fab fa-html5"></i> Html</div>
+            <div class="skill css"><i class="fab fa-css3-alt"></i> Css</div>
+            <div class="skill sql"><i class="fas fa-database"></i>  SQL</div>
+            <div class="skill flask"><i class="fas fa-pepper-hot"></i> Flask</div>
+            <div class="skill php"><i class="fab fa-php"></i> Php</div>
+            <div class="skill git"><i class="fab fa-git"></i> Git</div>
+            <div class="skill res-design"><i class="fas fa-pen-nib"></i> Responsive Design</div>
+            <div class="skill js"><i class="fab fa-js"></i> JavaScript</div>
+            <div class="skill github"><i class="fab fa-github"></i> Github</div>
+            <div class="skill react"><i class="fab fa-react"></i>  React (Basics)</div>
+        </div>
     </div>
-    <div class="section services">
+    <div class="section services" id="services">
         <div class="section-heading">
             <p class="heading">Services</p>
         </div>
@@ -118,7 +131,44 @@
             </div>
         </div>
     </div>
-    <div class="section-contact-me">
+    <div class="section projects" id="projects">
+        <div class="section-heading">
+            <p class="heading">Projects</p>
+        </div>
+        <div class="project-content">
+            <div class="service-div frontend-service">
+                <div class="topic">
+                    Social Media Web App (Flask)
+                </div>
+                <div class="points-div">
+                    <ul class="points">
+                        <li>Desing Under Progress 🛠️</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-div backend-service">
+                <div class="topic">
+                    Chess Game (Javascript)
+                </div>
+                <div class="points-div">
+                    <ul class="points">
+                        <li>Desing Under Progress 🛠️</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-div database-management">
+                <div class="topic">
+                    HR Management Software (flask)
+                </div>
+                <div class="points-div">
+                    <ul class="points">
+                        <li>Desing Under Progress 🛠️</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-contact-me" id="contact-me">
         <div class="contact-me-heading-div">
             <p class="contact-me-heading">Have an awesome project idea?<p>
             <p> Lets's discuss</p>
@@ -126,18 +176,18 @@
         <div class="section contact-me-form-div">
             <form class="contact-me-form">
                 <div class="name">
-                    <label for="name">Your Name</label><br>
-                    <input type="text" id="name" class="contact-me-name"/>
+                    <label for="contact-me-name">Your Name</label><br>
+                    <input type="text" id="contact-me-name" class="contact-me-name" required/>
                 </div>
                 <div class="email">
-                    <label for="email">Email</label><br>
-                    <input type="text" id="email" class="contact-me-email"/>
+                    <label for="contact-me-email">Email</label><br>
+                    <input type="text" id="contact-me-email" class="contact-me-email" required/>
                 </div>
                 <div class="description">
                     <label for="description">Describe your idea</label><br>
-                    <input type="textarea" id="description" class="contact-me-description"/>
+                    <input type="textarea" id="description" class="contact-me-description" required/>
                 </div>
-                <button type="submit" class="submit-contact-me">Send</button>
+                <a type="submit" id="submit-contact-me" class="submit-contact-me">Send</a>
             </form>
         </div>
     </div>
