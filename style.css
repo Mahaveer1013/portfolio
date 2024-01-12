@@ -256,7 +256,8 @@ p,h1,h2,h3{
   background-color: #35353d;
   border-radius: 2.5vw;
   width: 80vw;
-  height:40vw;
+  height:100%;
+  padding-bottom: 2vw;
   border: #35353d;
   margin-bottom: 8vw;
   display: flex;
@@ -268,13 +269,14 @@ p,h1,h2,h3{
   height: 5vw;
 }
 .contact-me-form-div div{
-  padding-bottom: 2vw;
+  padding-bottom: 1%;
 }
 .contact-me-form label{
   font-size: 2vw;
 }
 .contact-me-form input{
   width: 40vw;
+  border: 0;
   padding: 0.7vw;
   background-color: #d9d9d9;
   margin-top: 0.4vw;
