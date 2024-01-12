@@ -94,7 +94,7 @@ nav {
   height: auto;
 }
 .yellow-profile-pic{
-  border: 4px solid #fef27a;
+  border: 0.4vw solid #fef27a;
   border-radius: 100vw ;
   width: 75%;
   height: auto;
@@ -127,7 +127,7 @@ nav {
   font-weight: bold;
 }
 .see-my-works{
-  border: 1px solid #fef27a;
+  border: 0.1vw solid #fef27a;
   color: #fef27a;
   background-color: #35353d;
   margin-right: 1vw;
@@ -135,7 +135,7 @@ nav {
 .hire-me{
   margin-left: 1vw;
   background-color: #fef27a;
-  border: 1px solid #fef27a;
+  border: 0.1vw solid #fef27a;
   color:#35353d;
 }
 .section{
@@ -145,7 +145,7 @@ nav {
   height:auto;
 }
 .section-heading{
-  border-bottom: 3px solid #fef27a;
+  border-bottom: 0.3vw solid #fef27a;
   margin-bottom: 5%;
   width: 20vw;
 }
@@ -196,7 +196,7 @@ p,h1,h2,h3{
   height: auto;
   background-color:#1d1e20;
   color:#fef27a ;
-  border: 1px solid #fef27a;
+  border: 0.1vw solid #fef27a;
   border-radius: 0.5vw;
   padding: 1vw 1.5vw;
   font-weight: bold;
@@ -211,7 +211,7 @@ p,h1,h2,h3{
 }
 .service-div{
   border-radius: 2.5vw;
-  border:3px solid #fef27a;
+  border:0.3vw solid #fef27a;
   width: 23vw;
   height: 23vw;
   display: flex;
@@ -223,7 +223,7 @@ p,h1,h2,h3{
   font-weight: bold;
   color: #d9d9d9;
   padding: 1.5vw 0;
-  border-bottom: 2px solid #fef27a;
+  border-bottom: 0.2vw solid #fef27a;
   margin-bottom: 2vw;
   color: #fef27a;
 }
