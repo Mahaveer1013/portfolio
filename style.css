@@ -7,28 +7,28 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  background: #242529;
+  background: #1d1e20;
 }
 nav {
   display: flex;
   position: fixed;
   width: 100%;
-  background-color: #1d1e20;
   align-items: center;
   justify-content: space-between;
-  z-index: 2;
+  z-index: 5;
+  background-color: #1d1e20;
 }
 .nav-list{
   margin-right: 6vw;
   display: flex;
 }
 .nav-list a{
-    text-decoration: none;
+    text-decoration:none;
     color: #d9d9d9;
 }
 .nav-list li{
     list-style: none;
-    padding: 1vw 2vw;
+    padding: 0.5vw 2vw;
     font-size: 1.5vw;
     display: flex;
     padding: 0 1.5vw;
@@ -48,15 +48,16 @@ nav {
     position: sticky; */
 }
 .logo {
-  margin: 2vw 4% 1vw 8%;
+  margin: 1vw 4% 1vw 8%;
 }
 .logo-name {
   font-size: 3vw;
   color: aliceblue;
 }
 .content{
-  position: absolute;
-  top: 6vw;
+  background-color: #242529;
+  /* position: absolute; */
+  /* top: 6vw; */
   width: 100vw;
   display: flex;
   align-items: center;
@@ -148,6 +149,9 @@ nav {
   border-bottom: 0.3vw solid #fef27a;
   margin-bottom: 5%;
   width: 20vw;
+}
+.profile-heading{
+  border-bottom: 0;
 }
 .heading{
   font-size: 3vw;
@@ -293,4 +297,36 @@ p,h1,h2,h3{
   font-weight: 700;
   color: #242529;
   border-radius: 2vw; 
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 18vw;
+  
+}
+.footer-logo-name{
+  height: 4vw;
+  width: 80vw;
+}
+.footer-content{
+  
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+}
+.footer-sub-content{
+  
+  width: 20vw;
+}
+.footer-heading{
+  font-weight: bolder;
+  font-size: 1.5vw;
+}
+.connect a{
+  text-decoration: none;
+}
+footer p{
+  font-size: 1.5vw;
 }
