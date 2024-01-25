@@ -5,36 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous"/>
 </head>
 <body>
 <nav>
     <div class="logo">
-        <h1 class="logo-name">Mahaveer</h1>
+        <div class="head-name">
+            <h1 class="logo-name">Mahaveer</h1>
+        </div>
+        <div class="menu-bar" onclick="open_menu()">
+            <i class="fas fa-lg fa-bars menu-btn"></i>
+        </div>
     </div>
-    <ul class="nav-list">
-        <li>
-            <a href="#profile" class="home-Btn">Home</a>
-        </li>
-        <li>
-            <a href="#about-me" class="about-Btn">About</a>
-        </li>
-        <li>
-            <a href="#services" class="service-Btn">Service</a>
-        </li>
-        <li>
-            <a href="#projects" class="project-Btn">Project</a>
-        </li>
-        <li>
-            <a href="" class="blog-Btn">Blog</a>
-        </li>
-        <li>
-            <a href="#contact-me" class="contact-me">Contact Me</a>
-        </li>
-    </ul>
+    <div class="nav-list-div">
+        <ul class="nav-list">
+            <!-- <li class="nav-close-li"><button onclick="open_menu()" class="nav-close-btn">X</button></li> -->
+            <li>
+                <a href="#profile" onclick="open_menu()" class="home-Btn">Home</a>
+            </li>
+            <li>
+                <a href="#about-me" onclick="open_menu()" class="about-Btn">About</a>
+            </li>
+            <li>
+                <a href="#services" onclick="open_menu()" class="service-Btn">Service</a>
+            </li>
+            <li>
+                <a href="#projects" onclick="open_menu()" class="project-Btn">Project</a>
+            </li>
+            <li>
+                <a href="" onclick="open_menu()" class="blog-Btn">Blog</a>
+            </li>
+            <li class="contact-me-li">
+                <a href="#contact-me" onclick="open_menu()" class="contact-me" id="contact-me-btn">Contact Me</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 <div class="content">
 
@@ -49,16 +54,21 @@
                     <p class="header-card designation">Full Stack Web Developer </p>
                 </div>
                 <div class="card-left-bottom">
-                    <button class="see-my-works card-btn">See my works</button>
-                    <button class="hire-me card-btn">Hire Me</button>
+                    <button class="see-my-works card-btn">
+                        <a href="#projects" id="see-my-works">See my works</a>
+                    </button>
+                    <button class="hire-me card-btn">
+                        <a href="#contact-me" id="hire-me">Hire Me</a>
+                    </button>
                 </div>
             </div>
             <div class="card-right">
-                <img src="resources\resources\Beige Simple Photo Signature Twitter Profile Picture-modified.png" class="profile-pic" alt="">
-                <!-- <img src="resources/resources/WhatsApp Image 2024-01-11 at 18.56.07_cc1e0d0f-modified.png" class="yellow-profile-pic" alt=""> -->
+                <img src="resources/resources/Beige Simple Photo Signature Twitter Profile Picture-modified.png" class="profile-pic" alt="">
+                <img src="resources/resources/WhatsApp Image 2024-01-11 at 18.56.07_cc1e0d0f-modified.png" class="yellow-profile-pic" alt="">
             </div>
         </div>
     </div>
+
     <div class="section about-me" id="about-me">
         <div class="section-heading">
             <p class="heading">About Me</p>
@@ -85,6 +95,7 @@
             <div class="skill react"><i class="fab fa-react"></i>  React (Basics)</div>
         </div>
     </div>
+
     <div class="section services" id="services">
         <div class="section-heading">
             <p class="heading">Services</p>
@@ -201,45 +212,48 @@
     </div>
 </div>
 <footer id="footer">
-    <p class="footer-logo-name">
-        Mahaveer
-    </p>
-    <div class="footer-content">
-        <div class="footer-sub-content contact">
-            <p class="footer-heading">Contact</p><br>
-            <p class="footer-contact">
-                <i class="fas fa-phone"></i> +91 7305591366
-            </p><br>
-            <p class="footer-contact">
-                <i class="fas fa-envelope"></i> a.mahaveer5@gmail.com
-            </p><br>
-            <p class="footer-contact">
-                <i class="fas fa-crosshairs"></i> Chennai
-            </p>
-        </div>
-        <div class="footer-sub-content explore">
-            <p class="footer-heading">Explore</p><br>
-            <p class="footer-explore">About me</p><br>
-            <p class="footer-explore">FAQs</p><br>
-            <p class="footer-explore">Blog</p><br>
-        </div>
-        <div class="footer-sub-content connect">
-            <p class="footer-heading">Connect</p><br>
-            <p class="footer-connect">
-                <a href=""><i class="fab fa-facebook"></i> Facebook</a>
-            </p><br>
-            <p class="footer-connect">
-                <a href="https://www.instagram.com/mahaveer._1013?igsh=aTFkem52a2kydnIx "><i class="fab fa-instagram"></i> Instagram</a>
-            </p><br>
-            <p class="footer-connect">
-                <a href=""><i class="fab fa-linkedin"></i> Linked In</a>
-            </p><br>
-            <p class="footer-connect">
-                <a href="https://github.com/Mahaveer1013"><i class="fab fa-github"></i> Github</a>
-            </p>
-            
+    <div class="footer">
+        <!-- <p class="footer-logo-name">
+            Mahaveer
+        </p> -->
+        <div class="footer-content">
+            <div class="footer-sub-content contact">
+                <p class="footer-heading">Contact</p><br>
+                <p class="footer-contact">
+                    <i class="fas fa-phone"></i> +91 7305591366
+                </p><br>
+                <p class="footer-contact">
+                    <i class="fas fa-envelope"></i> a.mahaveer5@gmail.com
+                </p><br>
+                <p class="footer-contact">
+                    <i class="fas fa-crosshairs"></i> Chennai
+                </p>
+            </div>
+            <div class="footer-sub-content explore">
+                <p class="footer-heading">Explore</p><br>
+                <p class="footer-explore">About me</p><br>
+                <p class="footer-explore">FAQs</p><br>
+                <p class="footer-explore">Blog</p><br>
+            </div>
+            <div class="footer-sub-content connect">
+                <p class="footer-heading">Connect</p><br>
+                <p class="footer-connect">
+                    <a href=""><i class="fab fa-facebook"></i> Facebook</a>
+                </p><br>
+                <p class="footer-connect">
+                    <a href="https://www.instagram.com/mahaveer._1013?igsh=aTFkem52a2kydnIx "><i class="fab fa-instagram"></i> Instagram</a>
+                </p><br>
+                <p class="footer-connect">
+                    <a href=""><i class="fab fa-linkedin"></i> Linked In</a>
+                </p><br>
+                <p class="footer-connect">
+                    <a href="https://github.com/Mahaveer1013"><i class="fab fa-github"></i> Github</a>
+                </p>
+                
+            </div>
         </div>
     </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
