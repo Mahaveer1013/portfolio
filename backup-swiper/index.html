@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <div class="head-name">
+            <h1 class="logo-name">Portfolio</h1>
+        </div>
+        <div class="menu-bar" onclick="open_menu()">
+            <i class="fas fa-lg fa-bars menu-btn"></i>
+        </div>
+    </div>
+    <div class="nav-list-div">
+        <ul class="nav-list">
+            <!-- <li class="nav-close-li"><button onclick="open_menu()" class="nav-close-btn">X</button></li> -->
+            <li>
+                <a href="#profile" onclick="open_menu()" class="home-Btn">Home</a>
+            </li>
+            <li>
+                <a href="#about-me" onclick="open_menu()" class="about-Btn">About</a>
+            </li>
+            <li>
+                <a href="#services" onclick="open_menu()" class="service-Btn">Service</a>
+            </li>
+            <li>
+                <a href="#projects" onclick="open_menu()" class="project-Btn">Project</a>
+            </li>
+            <li>
+                <a href="" onclick="open_menu()" class="blog-Btn">Blog</a>
+            </li>
+            <li class="contact-me-li">
+                <a href="#contact-me" onclick="open_menu()" class="contact-me" id="contact-me-btn">Contact Me</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="content">
+
+    <div class="profile" id="profile">
+        <div class="section-heading profile-heading">
+            <p class="heading"></p>
+        </div>
+        <div class="card" id="card">
+            <div class="card-left">
+                <div class="card-left-top">
+                    <p class="header-card name">I'm Mahaveer</p>
+                    <p class="header-card designation">Full Stack Web Developer </p>
+                </div>
+                <div class="card-left-bottom">
+                    <button class="see-my-works card-btn">
+                        <a href="#projects" id="see-my-works">See my works</a>
+                    </button>
+                    <button class="hire-me card-btn">
+                        <a href="#contact-me" id="hire-me">Hire Me</a>
+                    </button>
+                </div>
+            </div>
+            <div class="card-right">
+                <img src="resources/resources/Beige Simple Photo Signature Twitter Profile Picture-modified.png" class="profile-pic" alt="">
+                <img src="resources/resources/WhatsApp Image 2024-01-11 at 18.56.07_cc1e0d0f-modified.png" class="yellow-profile-pic" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="section about-me" id="about-me">
+        <div class="section-heading">
+            <p class="heading">About Me</p>
+        </div>
+        <p class="about">
+            I'm Mahaveer, your Full stack developer Wizard!! Creating Responsive and well designed websites and web app with 
+            delightful digital experience. Let's make our website or app stand out and share.
+        </p>
+        <p class="education">Education</p>
+        <p class="edu1">Panimalar Engineering College, Poonamallee</p>
+        <p class="edu2">B.Tech in Information Technology</p>
+        <p class="edu">Oct 2022 - Jun 2026</p>
+        <p class="education">My Skills</p>
+        <div class="my-skills">
+            <div class="skill html"><i class="fab fa-html5"></i> Html</div>
+            <div class="skill css"><i class="fab fa-css3-alt"></i> Css</div>
+            <div class="skill sql"><i class="fas fa-database"></i>  SQL</div>
+            <div class="skill flask"><i class="fas fa-pepper-hot"></i> Flask</div>
+            <div class="skill php"><i class="fab fa-php"></i> Php</div>
+            <div class="skill git"><i class="fab fa-git"></i> Git</div>
+            <div class="skill res-design"><i class="fas fa-pen-nib"></i> Responsive Design</div>
+            <div class="skill js"><i class="fab fa-js"></i> JavaScript</div>
+            <div class="skill github"><i class="fab fa-github"></i> Github</div>
+            <div class="skill react"><i class="fab fa-react"></i>  React (Basics)</div>
+        </div>
+    </div>
+
+    <div class="section services large-screen" id="services">
+        <div class="section-heading">
+            <p class="heading">Services</p>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="service-content swiper-wrapper">
+                <div class="service-div frontend-service swiper-slide">
+                    <div class="topic">
+                        <i class="fa fa-layer-group"></i> Full Stack development
+                    </div>
+                    <div class="points-div">
+                        <ul class="points">
+                            <li>Responsive design</li>
+                            <li>Backend Development</li>
+                            <li>Frontend Development</li>
+                            <li>API Integration</li>
+                            <li>Testing</li>
+                            <li>Exception Handling</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-div backend-service swiper-slide">
+                    <div class="topic">
+                        <i class="fa fa-code-branch"></i> Logical Programming
+                    </div>
+                    <div class="points-div">
+                        <ul class="points">
+                            <li>Algorithm Design</li>
+                            <li>Data Structures</li>
+                            <li>Complex Problem Solving</li>
+                            <li>Logical Reasoning</li>
+                            <li>Critical Thinking</li>
+                            <li>Code Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-div database-management swiper-slide">
+                    <div class="topic">
+                        <i class="fa fa-database"></i> Database Management
+                    </div>
+                    <div class="points-div">
+                        <ul class="points">
+                            <li>Database Design</li>
+                            <li>Normalization</li>
+                            <li>Data Modeling</li>
+                            <li>Database Administration</li>
+                            <li>Data Migration</li>
+                            <li>Security</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="section projects large-screen" id="projects">
+        <div class="section-heading">
+            <p class="heading">Projects</p>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="project-content swiper-wrapper">
+                <div class="service-div frontend-service swiper-slide">
+                    <div class="topic">
+                        Social Media Web App (Flask)
+                    </div>
+                    <div class="points-div">
+                        <ul class="points">
+                            <li>Desing Under Progress 🛠️</li>
+                            <li><a href="https://github.com/Mahaveer1013/social_python.git">Code Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-div backend-service swiper-slide">
+                    <div class="topic">
+                        Chess Game (Javascript)
+                    </div>
+                    <div class="points-div">
+                        <ul class="points">
+                            <li>Desing Under Progress 🛠️</li>
+                            <li><a href="https://github.com/Mahaveer1013/Chess-game-JS.git">Code Link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-div database-management swiper-slide">
+                    <div class="topic">
+                        HR Management Software (flask)
+                    </div>
+                    <div class="points-div">
+                        <ul class="points">
+                            <li>Desing Under Progress 🛠️</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    
+    <div class="section-contact-me" id="contact-me">
+        <div class="contact-me-heading-div">
+            <p class="contact-me-heading">Have an awesome project idea?<p>
+            <p> Lets's discuss</p>
+        </div>
+        <div class="section contact-me-form-div">
+            <form class="contact-me-form">
+                <div class="name">
+                    <label for="contact-me-name">Your Name</label><br>
+                    <input type="text" id="contact-me-name" class="contact-me-name" required/>
+                </div>
+                <div class="email">
+                    <label for="contact-me-email">Email</label><br>
+                    <input type="text" id="contact-me-email" class="contact-me-email" required/>
+                </div>
+                <div class="description">
+                    <label for="description">Describe your idea</label><br>
+                    <input type="textarea" id="description" class="contact-me-description" required/>
+                </div>
+                <a type="submit" id="submit-contact-me" class="submit-contact-me">Send</a>
+            </form>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <div class="footer">
+        <!-- <p class="footer-logo-name">
+            Mahaveer
+        </p> -->
+        <div class="footer-content">
+            <div class="footer-sub-content contact">
+                <p class="footer-heading">Contact</p><br>
+                <p class="footer-contact">
+                    <i class="fas fa-phone"></i> +91 7305591366
+                </p><br>
+                <p class="footer-contact">
+                    <i class="fas fa-envelope"></i> a.mahaveer5@gmail.com
+                </p><br>
+                <p class="footer-contact">
+                    <i class="fas fa-crosshairs"></i> Chennai
+                </p>
+            </div>
+            <div class="footer-sub-content explore">
+                <p class="footer-heading">Explore</p><br>
+                <p class="footer-explore">About me</p><br>
+                <p class="footer-explore">FAQs</p><br>
+                <p class="footer-explore">Blog</p><br>
+            </div>
+            <div class="footer-sub-content connect">
+                <p class="footer-heading">Connect</p><br>
+                <p class="footer-connect">
+                    <a href=""><i class="fab fa-facebook"></i> Facebook</a>
+                </p><br>
+                <p class="footer-connect">
+                    <a href="https://www.instagram.com/mahaveer._1013?igsh=aTFkem52a2kydnIx "><i class="fab fa-instagram"></i> Instagram</a>
+                </p><br>
+                <p class="footer-connect">
+                    <a href=""><i class="fab fa-linkedin"></i> Linked In</a>
+                </p><br>
+                <p class="footer-connect">
+                    <a href="https://github.com/Mahaveer1013"><i class="fab fa-github"></i> Github</a>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
