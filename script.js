@@ -23,7 +23,7 @@ const firstCardWidth_1 = carousel_1.querySelector(".inner-card-1").offsetWidth;
 const arrowBtns_1 = document.querySelectorAll(".wrapper-1 i");
 const carouselChildrens_1 = [...carousel_1.children];
 
-swipe(wrapper_1, carousel_1, arrowBtns_1, carouselChildrens_1);
+swipe(wrapper_1, carousel_1,firstCardWidth_1, arrowBtns_1, carouselChildrens_1);
 
 const wrapper_2 = document.querySelector(".wrapper-2");
 const carousel_2 = document.querySelector(".carousel-2");
@@ -31,14 +31,14 @@ const firstCardWidth_2 = carousel_2.querySelector(".inner-card-2").offsetWidth;
 const arrowBtns_2 = document.querySelectorAll(".wrapper-2 i");
 const carouselChildrens_2 = [...carousel_2.children];
 
-swipe(wrapper_2, carousel_2, arrowBtns_2, carouselChildrens_2);
+swipe(wrapper_2, carousel_2,firstCardWidth_2, arrowBtns_2, carouselChildrens_2);
 
-function swipe(wrapper,carousel,arrowBtns,carouselChildrens) {
+function swipe(wrapper,carousel,firstCardWidth,arrowBtns,carouselChildrens) {
         
     let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
 
     // Get the number of cards that can fit in the carousel at once
-    let cardPerView = Math.round(carousel.offsetWidth / 500);
+    let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
 
     // Insert copies of the last few cards to beginning of carousel for infinite scrolling
     carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
@@ -58,7 +58,7 @@ function swipe(wrapper,carousel,arrowBtns,carouselChildrens) {
     // Add event listeners for the arrow buttons to scroll the carousel left and right
     arrowBtns.forEach(btn => {
         btn.addEventListener("click", () => {
-            carousel.scrollLeft += btn.id == "left" ? -500 : 500;
+            carousel.scrollLeft += btn.id == "left" ? -(2*firstCardWidth)-20 : (2*firstCardWidth)+20;
         });
     });
 
@@ -102,8 +102,8 @@ function swipe(wrapper,carousel,arrowBtns,carouselChildrens) {
 
     const autoPlay = () => {
         if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
-        // Autoplay the carousel after every 2500 ms
-        timeoutId = setTimeout(() => carousel.scrollLeft += 500, 2500);
+        // Autoplay the carousel after every 2firstCardWidth ms
+        timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
     }
     autoPlay();
 
@@ -114,3 +114,9 @@ function swipe(wrapper,carousel,arrowBtns,carouselChildrens) {
     wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
     wrapper.addEventListener("mouseleave", autoPlay);
 }
+
+const toggleButton = document.querySelector('.blog-Btn'); // Change this to the actual ID of your toggle button
+
+toggleButton.addEventListener('click', () => {
+  document.documentElement.classList.toggle('light-mode');
+});
