@@ -82,6 +82,7 @@ nav {
   /* position: absolute; */
   /* top: 60px; */
   width: 100%;
+  /* margin: 0 2%; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -481,9 +482,9 @@ footer p{
   .footer-logo-name{
     width: 100%;
   }
-  .large-screen{
+  /* .large-screen{
     display: none;
-  }
+  } */
   .small-screen{
     display: flex;
     flex-direction: column;
@@ -554,10 +555,20 @@ footer p{
     scroll-behavior: smooth;
     scrollbar-width: none;
   }
+  .service-content,.project-content{
+      flex-wrap: wrap;
+      gap: 30px;
+  }
   .service-div{
+    border: 1px solid #fef27a;
     width: 300px;
-    position: relative;
-    left: 19vw;
+    position: static;
+  }
+  .topic{
+    border-bottom: 1px solid #fef27a;
+  }
+  .about-me p{
+    font-weight: 10;
   }
   .carousel li{
     /* margin-right: 500px; */
@@ -592,11 +603,17 @@ footer p{
     flex-direction: column;
     border-radius: 8px;
   }
+  .points li{
+    font-size: 20px;
+  }
 }
 @media all and (max-width:430px){
+  .profile{
+    height: 90vh;
+  }
   .card{
     width: 90vw;
-    height: auto;
+    height: 90%;
     flex-direction: column-reverse;
   }
   .profile-pic{
@@ -662,14 +679,6 @@ footer p{
   .wrapper{
     width: 80%;
   }
-  .inner-card{
-    position: relative;
-    left: -35vw;
-  }
-  .service-div{
-    right: 19vw;
-    left: auto;
-  }
   .skill{
     width: auto;
     padding: 1vw;
@@ -682,24 +691,21 @@ footer p{
     gap: 3vw; 
     margin: 3vw 0; 
   }
-  .small-screen{
-    align-items: center;
-  }
-  #left,#right{
-    border: 0;
-  }
   .service-div{
     width: 200px;
   }
   .carousel li{
     width: 50vw;
   }
-  .service-div,.inner-card{
+  .service-div{
     width: 100%;
     margin: 0 auto;
   }
   .service-div{
-    left: 6%;
+    width: 80%;
+  }
+  .points li{
+    font-size: 5vw;
   }
   .topic,.points-div,.points{
     display: flex;
@@ -713,18 +719,18 @@ footer p{
   .section-contact-me{
     width: 80vw;
   }
-  .contact-me-heading-div{
-    font-size: 25px;
+  .contact-me-heading,.contact-me-heading-div{
+      display: flex;
+      text-align: center;
+      font-size: 30px;
+  }
+  .contact-me-heading{
+      margin-bottom: 10px;
   }
   .contact-me-form-div{
-    width: 70vw;
+    width: 80vw;
   }
   .contact-me-form input{
     width: 50vw;
-  }
-}
-@media all and (max-width:320px){
-  .inner-card{
-    left: -55vw;
   }
 }
