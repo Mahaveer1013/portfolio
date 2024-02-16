@@ -196,20 +196,20 @@
             <p> Lets's discuss</p>
         </div>
         <div class="section contact-me-form-div">
-            <form class="contact-me-form">
+            <form class="contact-me-form" method="POST" action="https://formspree.io/f/mvoeabzy">
                 <div class="name">
                     <label for="contact-me-name">Your Name</label><br>
-                    <input type="text" id="contact-me-name" class="contact-me-name" required/>
+                    <input type="text" id="contact-me-name" name="Name" class="contact-me-name" required/>
                 </div>
                 <div class="email">
                     <label for="contact-me-email">Email</label><br>
-                    <input type="text" id="contact-me-email" class="contact-me-email" required/>
+                    <input type="text" id="contact-me-email" name="Email" class="contact-me-email" required/>
                 </div>
                 <div class="description">
                     <label for="description">Describe your idea</label><br>
-                    <input type="textarea" id="description" class="contact-me-description" required/>
+                    <input type="textarea" id="description" name="Body" class="contact-me-description" required/>
                 </div>
-                <a type="submit" id="submit-contact-me" class="submit-contact-me">Send</a>
+                <button type="submit" id="submit-contact-me" class="submit-contact-me">Send</button>
             </form>
         </div>
     </div>
